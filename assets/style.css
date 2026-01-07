@@ -590,4 +590,11 @@ h1{
   }
 }
 
+/* =========================
+   CHI SIAMO – reduce bottom spacing
+   ========================= */
+
+.section#chi-siamo{
+  padding-bottom: 64px; /* prima era 92px → più compatto ma ancora arioso */
+}
 
