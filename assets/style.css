@@ -529,3 +529,33 @@ h1{
     transform: translateX(-14px);
   }
 }
+
+/* =========================
+   HERO CTA – premium layout
+   ========================= */
+
+/* CTA su griglia: colonne uguali */
+.hero .cta-row{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 14px;
+  align-items: center;
+  width: fit-content; /* non si espande inutilmente */
+}
+
+/* Bottoni perfettamente uniformi */
+.hero .cta-row .btn{
+  font-size: 12px;
+  letter-spacing: .04em;
+  padding: 14px 18px;
+  min-height: 46px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Neutralizza differenze btn-small */
+.hero .cta-row .btn.btn-small{
+  font-size: 12px;
+  padding: 14px 18px;
+}
