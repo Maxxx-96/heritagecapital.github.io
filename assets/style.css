@@ -580,7 +580,8 @@ h1{
 
 @media (max-width: 768px){
   .chi-siamo-image{
-    max-width: 360px;
-    margin-top: 32px;
+    max-width: 300px;
+    margin-top: 28px;
   }
 }
+
