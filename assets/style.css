@@ -8,6 +8,8 @@
   --line: rgba(255,255,255,.10);
   --brand: #A98444;       /* gold del logo */
   --brand-2:#2A4159;      /* blu medio del logo */
+    --light-bg: #F4F6F9;   /* off-white freddo, premium */
+  --light-ink: #0B1220;  /* testo scuro leggibile su fondo chiaro */
 
   --radius: 18px;
   --shadow: 0 18px 50px rgba(0,0,0,.35);
@@ -295,4 +297,30 @@ h1{
   .contact-card{ grid-template-columns: 1fr; }
   .section{ padding: 64px 0; }
   .hero-inner{ padding: 64px 0 48px; }
+}
+/* --- Light sections (alternating background) --- */
+.section-light{
+  background: var(--light-bg);
+  color: var(--light-ink);
+  border-top: 1px solid rgba(0,0,0,.06);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+/* Testi su fondo chiaro */
+.section-light h2,
+.section-light h3{
+  color: #0B1220;
+}
+
+.section-light p,
+.section-light .muted{
+  color: #3B4451;
+}
+
+.section-light a{
+  color: #0B1220;
+}
+
+.section-light a:hover{
+  color: var(--brand);
 }
