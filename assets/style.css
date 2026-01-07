@@ -311,12 +311,12 @@ h1{
 
 .hero-logo-img{
   display:block;
-  width: 460px;      /* ✅ leggermente più piccolo (prima 520) */
+  width: 4200px;      /* ✅ leggermente più piccolo (prima 520) */
   max-width: 42vw;   /* ✅ un filo meno */
   height: auto;
   filter: none;      /* ✅ NO gold */
   opacity: 1;
-  transform: translateX(-18px) translateY(8px); /* ✅ meno spazio bianco rispetto a prima */
+  transform: translateX(-17px) translateY(7px); /* ✅ meno spazio bianco rispetto a prima */
 }
 
 /* Fade-in subtle */
