@@ -279,7 +279,7 @@ h1{
 .section-head p{
   font-size: 18px;
   line-height: 1.9;
-  max-width: 1100px; /* fa arrivare il testo quasi fino al terzo box */
+  max-width: 100%; /* fa arrivare il testo quasi fino al terzo box */
 }
 
 /* Cards slightly larger text */
