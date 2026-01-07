@@ -501,3 +501,21 @@ h1{
 .footer.footer--light .footer-disclaimer p{
   color: var(--light-muted) !important;
 }
+/* Slim legal footer */
+.footer{
+  padding: 14px 0; /* prima era 28px */
+}
+
+.footer-inner{
+  font-size: 12px;
+}
+
+.footer-disclaimer{
+  padding-top: 6px; /* prima era 14px */
+}
+
+.footer-disclaimer p{
+  font-size: 11px;
+  line-height: 1.5;
+  max-width: 100%;
+}
