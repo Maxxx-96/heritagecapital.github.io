@@ -478,3 +478,26 @@ h1{
   .section{ padding: 104px 0; }
   .hero-inner{ padding: 110px 0 84px; }
 }
+/* Force Hero + Footer on white */
+.hero.hero--light{
+  background: var(--light-bg) !important;
+  border-bottom: 1px solid var(--light-line) !important;
+  color: var(--light-ink) !important;
+}
+
+.hero.hero--light .eyebrow{ color: #516070 !important; }
+.hero.hero--light h1{ color: var(--light-ink) !important; }
+.hero.hero--light .lead{ color: var(--light-muted) !important; }
+
+.footer.footer--light{
+  background: var(--light-bg) !important;
+  border-top: 1px solid var(--light-line) !important;
+  color: var(--light-muted) !important;
+}
+
+.footer.footer--light a{ color: var(--light-ink) !important; }
+.footer.footer--light a:hover{ color: var(--brand) !important; }
+
+.footer.footer--light .footer-disclaimer p{
+  color: var(--light-muted) !important;
+}
