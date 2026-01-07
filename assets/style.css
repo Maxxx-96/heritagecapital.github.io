@@ -642,3 +642,64 @@ h1{
 @media (max-width: 980px){
   .hero-logo{ display:none; }
 }
+/* ===== HERO LOGO: force original colors (remove any gold filter) ===== */
+.hero-logo-img,
+.hero-logo-img--original,
+.hero-logo-img--xl{
+  filter: none !important;
+  opacity: 1 !important;
+}
+/* ===== HERO LAYOUT: bigger logo, tighter spacing ===== */
+.hero-grid{
+  grid-template-columns: 1.35fr 0.65fr !important; /* più spazio al testo, colonna logo più compatta */
+  gap: 28px !important;                             /* prima era troppo */
+  align-items: center !important;
+}
+
+.hero-copy{
+  max-width: 85ch;
+}
+
+/* logo più grande (desktop) */
+.hero-logo-img{
+  width: 520px !important;      /* << più grande */
+  max-width: 46vw !important;   /* cresce bene su schermi larghi */
+  height: auto !important;
+  transform: translateX(-12px); /* avvicina visivamente al testo */
+}
+
+/* desktop molto grande */
+@media (min-width: 1440px){
+  .hero-logo-img{
+    width: 620px !important;
+    max-width: 44vw !important;
+    transform: translateX(-18px);
+  }
+}
+/* ===== HEADER: reduce height without touching typography ===== */
+.header-inner{
+  padding: 10px 0 !important;  /* prima 18px */
+}
+
+.site-header{
+  backdrop-filter: blur(10px);
+}
+/* ===== Typography: slightly larger descriptive text ===== */
+.lead{
+  font-size: 22px !important;   /* prima ~20 */
+  line-height: 1.8 !important;
+  max-width: 86ch !important;
+}
+
+.section-head p{
+  font-size: 19px !important;   /* prima ~18 */
+  line-height: 1.95 !important;
+}
+
+/* anche testo nei box/card un pelo più leggibile */
+.card p,
+.team-card__bio,
+.contact-card p{
+  font-size: 17px !important;
+  line-height: 1.9 !important;
+}
