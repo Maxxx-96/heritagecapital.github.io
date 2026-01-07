@@ -560,28 +560,34 @@ h1{
   padding: 14px 18px;
 }
 /* =========================
-   CHI SIAMO – image refined
+   CHI SIAMO – image (force center + smaller)
    ========================= */
 
-.chi-siamo-image{
-  margin: 36px auto 0;     /* centrata sotto il testo */
-  max-width: 420px;        /* più piccola (≈ 75%) */
+.section#chi-siamo .chi-siamo-image{
+  display: flex;
+  justify-content: center;     /* centra davvero */
+  margin-top: 34px;
 }
 
-.chi-siamo-image img{
-  width: 100%;
-  height: auto;
+.section#chi-siamo .chi-siamo-image img{
   display: block;
+  width: auto;                 /* evita stretch */
+  height: auto;
 
-  /* trattamento visivo */
-  opacity: 0.93;           /* premium */
-  filter: grayscale(8%);   /* desaturazione leggera */
+  max-width: 520px;            /* dimensione desktop */
+  max-height: 255px;           /* ✅ circa 3/4 dell’altezza attuale */
+  object-fit: contain;
+
+  opacity: 0.93;               /* 0.9–0.95 */
+  filter: saturate(0.92);      /* desaturazione leggera (≈ -8%) */
 }
 
+/* Mobile */
 @media (max-width: 768px){
-  .chi-siamo-image{
-    max-width: 300px;
-    margin-top: 28px;
+  .section#chi-siamo .chi-siamo-image img{
+    max-width: 360px;
+    max-height: 190px;
   }
 }
+
 
