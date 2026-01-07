@@ -305,18 +305,18 @@ h1{
 .hero-logo{
   display:flex;
   justify-content:flex-end;
-  align-items:center;
-  padding-top: 6px; /* micro allineamento ottico */
+  align-items:flex-end;
+  padding-top: 24px; /* micro allineamento ottico */
 }
 
 .hero-logo-img{
   display:block;
-  width: 480px;      /* ✅ leggermente più piccolo (prima 520) */
+  width: 460px;      /* ✅ leggermente più piccolo (prima 520) */
   max-width: 42vw;   /* ✅ un filo meno */
   height: auto;
   filter: none;      /* ✅ NO gold */
   opacity: 1;
-  transform: translateX(-10px); /* ✅ meno spazio bianco rispetto a prima */
+  transform: translateX(-18px) translateY(8px); /* ✅ meno spazio bianco rispetto a prima */
 }
 
 /* Fade-in subtle */
