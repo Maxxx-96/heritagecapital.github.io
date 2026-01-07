@@ -66,7 +66,7 @@ a:hover{ color: var(--brand); }
   align-items:center;
   justify-content:space-between;
   gap:16px;
-  padding: 10px 0; /* più stretto, font invariato */
+  padding: 10px 0; /* slim */
 }
 
 /* Brand text-only */
@@ -229,7 +229,7 @@ a:hover{ color: var(--brand); }
 .section-light .card p{ color: var(--light-muted); }
 
 /* =========================
-   HERO (WHITE) - logo big, close
+   HERO (WHITE)
    ========================= */
 .hero{
   background: var(--bg);
@@ -249,11 +249,11 @@ a:hover{ color: var(--brand); }
   padding: 92px 0 72px;
 }
 
-/* grid hero: riduce spazio tra testo e logo */
+/* Grid hero: meno spazio tra testo e logo */
 .hero-grid{
   display:grid;
-  grid-template-columns: 1.4fr 0.6fr; /* logo più vicino */
-  gap: 24px;                           /* meno aria */
+  grid-template-columns: 1.45fr 0.55fr; /* colonna logo più stretta */
+  gap: 18px;                             /* meno aria tra testo e logo */
   align-items: center;
 }
 
@@ -301,27 +301,28 @@ h1{
   border-color: rgba(169,132,68,.75);
 }
 
-/* HERO logo (original colors, BIG) */
+/* HERO logo (original colors, slightly smaller + closer) */
 .hero-logo{
   display:flex;
   justify-content:flex-end;
   align-items:center;
   padding-top: 6px; /* micro allineamento ottico */
 }
+
 .hero-logo-img{
   display:block;
-  width: 520px;         /* molto più grande */
-  max-width: 46vw;      /* responsivo su schermi larghi */
+  width: 480px;      /* ✅ leggermente più piccolo (prima 520) */
+  max-width: 42vw;   /* ✅ un filo meno */
   height: auto;
-  filter: none;         /* NO gold */
+  filter: none;      /* ✅ NO gold */
   opacity: 1;
-  transform: translateX(-18px); /* avvicina al testo */
+  transform: translateX(-10px); /* ✅ meno spazio bianco rispetto a prima */
 }
 
 /* Fade-in subtle */
 @keyframes logoFadeIn{
-  from { opacity: 0; transform: translateX(-18px) translateY(6px); }
-  to   { opacity: 1; transform: translateX(-18px) translateY(0); }
+  from { opacity: 0; transform: translateX(-10px) translateY(6px); }
+  to   { opacity: 1; transform: translateX(-10px) translateY(0); }
 }
 .hero-logo-img{
   animation: logoFadeIn 700ms ease-out 120ms both;
@@ -378,7 +379,7 @@ h1{
 }
 .team-card__bio{
   margin: 0 0 14px 0;
-  font-size: 17px; /* leggermente più grande */
+  font-size: 17px;
   line-height: 1.9;
 }
 .team-card__meta{
@@ -454,7 +455,7 @@ h1{
 .contact-card p{
   margin:0;
   line-height: 1.85;
-  font-size: 17px; /* leggermente più grande */
+  font-size: 17px;
 }
 
 .section-dark .contact-card > div{
@@ -477,7 +478,7 @@ h1{
    FOOTER (WHITE legal, slim)
    ========================= */
 .footer{
-  padding: 14px 0; /* slim */
+  padding: 14px 0;
 }
 .footer--light{
   background: var(--light-bg);
@@ -523,8 +524,8 @@ h1{
   .hero-inner{ padding: 110px 0 84px; }
 
   .hero-logo-img{
-    width: 640px;
-    max-width: 44vw;
-    transform: translateX(-26px);
+    width: 560px;       /* ✅ leggermente più piccolo (prima 640) */
+    max-width: 40vw;
+    transform: translateX(-14px);
   }
 }
