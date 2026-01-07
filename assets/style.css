@@ -524,9 +524,9 @@ h1{
   .hero-inner{ padding: 110px 0 84px; }
 
   .hero-logo-img{
-    width: 560px;       /* ✅ leggermente più piccolo (prima 640) */
+    width: 520px;       /* ✅ leggermente più piccolo (prima 640) */
     max-width: 40vw;
-    transform: translateX(-14px);
+    transform: translateX(-22px) translateY(10px);
   }
 }
 
