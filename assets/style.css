@@ -519,3 +519,27 @@ h1{
   line-height: 1.5;
   max-width: 100%;
 }
+/* Hero logo placement */
+.hero-logo{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .9;
+}
+
+.hero-logo img{
+  width: 240px;
+  max-width: 30vw;
+  height: auto;
+}
+
+/* Ensure hero container can position absolute children */
+.hero-inner{
+  position: relative;
+}
+
+/* Responsive: hide logo on small screens */
+@media (max-width: 980px){
+  .hero-logo{ display: none; }
+}
