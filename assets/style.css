@@ -578,9 +578,11 @@ h1{
   filter: grayscale(8%);         /* leggera desaturazione */
 }
 .chi-siamo-image{
-  margin: 40px auto 0;
+  margin-top: 40px;
   max-width: 520px;
+  margin-left: auto;   /* sposta a destra */
 }
+
 @media (max-width: 768px){
   .chi-siamo-image{
     max-width: 360px;
