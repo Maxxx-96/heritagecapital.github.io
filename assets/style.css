@@ -560,12 +560,12 @@ h1{
   padding: 14px 18px;
 }
 /* =========================
-   CHI SIAMO – image styling
+   CHI SIAMO – image refined
    ========================= */
 
 .chi-siamo-image{
-  margin-top: 40px;              /* spazio dal testo */
-  max-width: 520px;              /* NON troppo grande */
+  margin: 36px auto 0;     /* centrata sotto il testo */
+  max-width: 420px;        /* più piccola (≈ 75%) */
 }
 
 .chi-siamo-image img{
@@ -574,13 +574,8 @@ h1{
   display: block;
 
   /* trattamento visivo */
-  opacity: 0.93;                 /* 0.9–0.95 */
-  filter: grayscale(8%);         /* leggera desaturazione */
-}
-.chi-siamo-image{
-  margin-top: 40px;
-  max-width: 520px;
-  margin-left: auto;   /* sposta a destra */
+  opacity: 0.93;           /* premium */
+  filter: grayscale(8%);   /* desaturazione leggera */
 }
 
 @media (max-width: 768px){
