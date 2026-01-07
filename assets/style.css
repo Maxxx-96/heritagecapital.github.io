@@ -605,3 +605,40 @@ h1{
   }
   .hero-logo{ display:none; }
 }
+/* ===============================
+   HERO LOGO – ORIGINAL, BIGGER
+   =============================== */
+
+/* niente filtri: logo originale */
+.hero-logo-img--original{
+  filter: none !important;
+}
+
+/* dimensioni più importanti */
+.hero-logo-img{
+  width: 360px;          /* prima ~260 */
+  max-width: 38vw;       /* cresce bene su schermi grandi */
+  height: auto;
+  opacity: 1;            /* logo pieno, non “decorativo” */
+}
+
+/* allineamento ottico con headline */
+.hero-logo{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding-top: 12px;     /* micro-shift per allineare visivamente */
+}
+
+/* Large desktop (molto più impattante) */
+@media (min-width: 1440px){
+  .hero-logo-img{
+    width: 420px;
+    max-width: 40vw;
+  }
+}
+
+/* Mobile: continua a nasconderlo (scelta giusta) */
+@media (max-width: 980px){
+  .hero-logo{ display:none; }
+}
