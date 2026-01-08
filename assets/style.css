@@ -701,3 +701,17 @@ h1{
   white-space: nowrap;
 }
 
+/* ABOUT / CHI SIAMO – shared image styling (IT + EN) */
+.section-dark .chi-siamo-image{
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.section-dark .chi-siamo-image img{
+  max-width: 520px;
+  max-height: 255px;
+  object-fit: contain;
+  opacity: 0.93;
+  filter: saturate(0.92);
+}
