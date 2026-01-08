@@ -650,36 +650,54 @@ h1{
   padding-bottom: 64px; /* prima era 92px → più compatto ma ancora arioso */
 }
 /* =========================
-   LANGUAGE SWITCH (HEADER)
+   LANGUAGE SWITCH (HEADER) – premium + intuitive
    ========================= */
 
 .lang-switch{
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 
-  margin-left: 10px;
-  padding-left: 14px;
+  margin-left: 12px;
 
-  border-left: 1px solid rgba(255,255,255,0.25);
+  /* pill discreta */
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.06);
 
+  /* tipografia coerente con nav */
   font-size: 12px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  letter-spacing: .06em;
+  text-transform: none; /* “English” più chiaro di EN */
+  font-weight: 600;
 
-  opacity: 0.85;
+  color: var(--ink);
+  opacity: .92;
+
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, opacity 160ms ease;
 }
 
 .lang-switch:hover{
   opacity: 1;
-  color: var(--brand);
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.32);
+  transform: translateY(-1px);
+  color: var(--ink); /* evita effetto “link random” */
 }
 
-.lang-switch .flag{
+.lang-switch:focus-visible{
+  outline: 2px solid rgba(169,132,68,.55);
+  outline-offset: 2px;
+}
+
+.lang-switch__flag{
   font-size: 14px;
   line-height: 1;
+  transform: translateY(-.5px); /* allineamento ottico */
 }
 
-.lang-switch .lang-text{
-  font-weight: 600;
+.lang-switch__label{
+  white-space: nowrap;
 }
+
