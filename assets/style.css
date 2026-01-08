@@ -347,17 +347,48 @@ h1{
   line-height: 1.75;
   margin-bottom: 10px;
 }
-.team-photo{
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 14px;
+/* =========================
+   TEAM PHOTOS – bigger + premium (override-safe)
+   ========================= */
 
-  /* trattamento premium */
-  filter: grayscale(90%) contrast(1.05) brightness(0.95);
-  opacity: 0.95;
+.section#team .team-card--compact .team-photo{
+  width: 175px !important;        /* +75% circa */
+  height: 175px !important;
+  object-fit: cover !important;
+
+  border-radius: 14px !important; /* premium/editoriale, non avatar */
+  margin: 0 0 16px 0 !important;
+  display: block;
+
+  /* B/N premium */
+  filter: grayscale(100%) contrast(1.06) brightness(0.98) !important;
+  opacity: 0.92 !important;
+
+  /* profondità elegante */
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.14),
+    inset 0 0 0 1px rgba(255,255,255,0.35) !important;
+
+  transition: transform 240ms ease, opacity 240ms ease, filter 240ms ease;
 }
+
+/* hover sobrio */
+@media (hover:hover){
+  .section#team .team-card--compact .team-photo:hover{
+    transform: translateY(-2px);
+    opacity: 0.98;
+    filter: grayscale(95%) contrast(1.08) brightness(0.99) !important;
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1440px){
+  .section#team .team-card--compact .team-photo{
+    width: 195px !important;
+    height: 195px !important;
+  }
+}
+
 
 .team-card--compact .team-card__title{
   margin-bottom: 10px;
@@ -617,49 +648,4 @@ h1{
 
 .section#chi-siamo{
   padding-bottom: 64px; /* prima era 92px → più compatto ma ancora arioso */
-}
-
-/* =========================
-   TEAM PHOTOS – premium look
-   ========================= */
-
-.team-photo{
-  width: 175px;              /* ≈ +75% rispetto a ~100px */
-  height: 175px;
-  object-fit: cover;
-  border-radius: 14px;       /* meno “avatar”, più editoriale */
-  margin-bottom: 16px;
-
-  /* trattamento premium */
-  filter: grayscale(100%) contrast(1.05) brightness(0.98);
-  opacity: 0.92;
-
-  /* micro profondità */
-  box-shadow:
-    0 8px 24px rgba(0,0,0,0.12),
-    inset 0 0 0 1px rgba(255,255,255,0.4);
-
-  transition: all 240ms ease;
-}
-
-/* hover molto sobrio (desktop) */
-@media (hover: hover){
-  .team-photo:hover{
-    opacity: 1;
-    filter: grayscale(90%) contrast(1.08);
-    transform: translateY(-2px);
-  }
-}
-
-/* layout più arioso ma compatto */
-.team-card--compact{
-  padding-top: 28px;
-}
-
-/* Desktop grande: ancora più presence */
-@media (min-width: 1440px){
-  .team-photo{
-    width: 195px;
-    height: 195px;
-  }
 }
