@@ -338,10 +338,31 @@ h1{
   margin-top: 20px;
 }
 
-.team-card{
-  border-radius: var(--radius);
-  padding: 26px;
+.team-card--compact{
+  padding: 20px;                 /* prima 26px */
 }
+
+.team-card--compact .team-card__bio{
+  font-size: 15.5px;             /* leggermente più denso */
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.team-photo{
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+
+  /* trattamento premium */
+  filter: grayscale(90%) contrast(1.05) brightness(0.95);
+  opacity: 0.95;
+}
+
+.team-card--compact .team-card__title{
+  margin-bottom: 10px;
+}
+
 .section-light .team-card{
   background: rgba(11, 18, 32, 0.02);
   border: 1px solid rgba(11, 18, 32, 0.10);
