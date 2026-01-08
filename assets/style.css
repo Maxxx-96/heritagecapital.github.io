@@ -649,3 +649,37 @@ h1{
 .section#chi-siamo{
   padding-bottom: 64px; /* prima era 92px → più compatto ma ancora arioso */
 }
+/* =========================
+   LANGUAGE SWITCH (HEADER)
+   ========================= */
+
+.lang-switch{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-left: 10px;
+  padding-left: 14px;
+
+  border-left: 1px solid rgba(255,255,255,0.25);
+
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  opacity: 0.85;
+}
+
+.lang-switch:hover{
+  opacity: 1;
+  color: var(--brand);
+}
+
+.lang-switch .flag{
+  font-size: 14px;
+  line-height: 1;
+}
+
+.lang-switch .lang-text{
+  font-weight: 600;
+}
