@@ -619,3 +619,47 @@ h1{
   padding-bottom: 64px; /* prima era 92px → più compatto ma ancora arioso */
 }
 
+/* =========================
+   TEAM PHOTOS – premium look
+   ========================= */
+
+.team-photo{
+  width: 175px;              /* ≈ +75% rispetto a ~100px */
+  height: 175px;
+  object-fit: cover;
+  border-radius: 14px;       /* meno “avatar”, più editoriale */
+  margin-bottom: 16px;
+
+  /* trattamento premium */
+  filter: grayscale(100%) contrast(1.05) brightness(0.98);
+  opacity: 0.92;
+
+  /* micro profondità */
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(255,255,255,0.4);
+
+  transition: all 240ms ease;
+}
+
+/* hover molto sobrio (desktop) */
+@media (hover: hover){
+  .team-photo:hover{
+    opacity: 1;
+    filter: grayscale(90%) contrast(1.08);
+    transform: translateY(-2px);
+  }
+}
+
+/* layout più arioso ma compatto */
+.team-card--compact{
+  padding-top: 28px;
+}
+
+/* Desktop grande: ancora più presence */
+@media (min-width: 1440px){
+  .team-photo{
+    width: 195px;
+    height: 195px;
+  }
+}
